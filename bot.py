@@ -168,7 +168,7 @@ async def handle_message(update: Update, context: ContextTypes.DEFAULT_TYPE):
 
 # تشغيل البوت
 def main():
-    BOT_TOKEN = os.getenv("BOT_TOKEN") or "PUT-YOUR-TOKEN-HERE"
+    BOT_TOKEN = os.getenv("BOT_TOKEN") or "8072475015:AAGP4Ow0AeYJ4YUuE4a6utPlcINS9Wy5scY"
     app = ApplicationBuilder().token(BOT_TOKEN).build()
     app.add_handler(CommandHandler("start", start))
     app.add_handler(MessageHandler(filters.TEXT & ~filters.COMMAND, handle_message))
